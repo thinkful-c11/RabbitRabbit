@@ -6,7 +6,11 @@ import store from './store';
 import './index.css';
 ReactDOM.render(
   <Provider store={store}>
-    <CheeseList/>
+    <CheeseList cheeses={[
+    'Bath Blue',
+    'Barkham Blue',
+    'Buxton Blue'
+    ]} />,
   </Provider>,
   document.getElementById('root')
 );
