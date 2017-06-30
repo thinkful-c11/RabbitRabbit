@@ -1,4 +1,5 @@
-import {createStore, applyMiddleware} from 'redux'
+import {createStore, applyMiddleware} from 'redux';
 import thunk from 'redux-thunk';
-import {cheeseReducer} from './reducers';
-export default createStore(cheeseReducer, applyMiddleware(thunk));
+import cheeseReducer from './components/reducers/cheese';
+const store = createStore(cheeseReducer, applyMiddleware(thunk));
+export default store;
